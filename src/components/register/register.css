@@ -1,0 +1,96 @@
+/* register.css */
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh; /* Ensures the register container fills the viewport height */
+    width: 90vw; /* Ensures the register container fills the viewport width */
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 15px;
+    backdrop-filter: blur(14px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item {
+   
+  }
+  
+  .item h2 {
+    margin-bottom: 30px; /* Increased margin */
+    font-size: 28px; /* Slightly smaller font size */
+    font-weight: 700; /* Bolder font weight */
+    color: #fff; /* White color for contrast */
+  }
+  
+  .item form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item label {
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .item label img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #1a73e8;
+  }
+  
+  .item input[type="file"] {
+    display: none;
+  }
+  
+  .item input {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px; /* Increased font size */
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+  }
+  
+  .item input:focus {
+    box-shadow: 0 0 8px rgba(26, 115, 232, 0.5);
+    border: 1px solid #1a73e8;
+  }
+  
+  .item button {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    &:disabled{
+     cursor: not-allowed;
+     background-color: #1a73e88d;
+
+    }
+  }
+  
+  .item button:hover {
+    background-color: #1669c1;
+    transform: translateY(-2px);
+  }
+  
+  .item button:active {
+    transform: translateY(0);
+  }
+  
